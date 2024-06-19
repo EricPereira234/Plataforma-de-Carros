@@ -1,6 +1,6 @@
-import logoImg from '../../assets/logo.svg'
-import { Link } from 'react-router-dom'
-import { FiUser, FiLogIn } from 'react-icons/fi'
+import logoImg from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
+import { FiUser, FiLogIn } from 'react-icons/fi';
 
 export function Header() {
   const signed = true;
@@ -27,7 +27,7 @@ export function Header() {
 
         {!loadingAuth && !signed && (
           <Link to="/login">
-            <div className="border-2 rounded-full p-1 border-gray-900">
+            <div className="border-2 rounded-full p-1 border-gray-400">
               <FiLogIn size={22} color="#000"/>
             </div>
           </Link>
